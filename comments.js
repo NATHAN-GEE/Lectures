@@ -7,3 +7,6 @@
 -multiline comments created using /* 
 -comments are not eecuted by the parser */
 /**/
+
+let list = ["item1", "item2", "item3"];
+console.log(typeof list);
