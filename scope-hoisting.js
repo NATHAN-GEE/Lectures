@@ -84,10 +84,10 @@ addOne();
 // //Function Invocation
 // helloWorld();//Invoking/Call the function
 
-let addNums = function(x, y){
-    console.log(x + y);
-}
+let addNums = function (x, y) {
+  console.log(x + y);
+};
 addNums(5, 5);
 
-let addNums = 10
-console.log(addNums)
+let addNums = 10;
+console.log(addNums);
