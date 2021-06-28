@@ -59,12 +59,11 @@
 // console.log("---------------------");
 // movies.forEach((x) => console.log(x));
 
-
-let arr = [1, 2, 3, 4, 5];
-console.log(arr instanceof Array);
-arr.reverse();
-console.log(arr, arr instanceof Array);
-arr.forEach(x => console.log(x));
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr instanceof Array);
+// arr.reverse();
+// console.log(arr, arr instanceof Array);
+// arr.forEach((x) => console.log(x));
 
 // if (arr instanceof Array) {
 //     let revArr = arr.reverse();
@@ -72,3 +71,54 @@ arr.forEach(x => console.log(x));
 // } else {
 //     console.log('Not an array')
 // }
+
+// const twoNames = function (name1, name2) {
+//   console.log(name1, name2);
+// };
+// twoNames("Nathan", "Nikki");
+
+// const fizzBuzz = function () {
+//   for (let i = 0; i <= 100; i++) {
+//     if (i % 6 === 0 && i % 8 === 0) {
+//       console.log("Fizz Buzz");
+//     } else if (i % 8 === 0) {
+//       console.log("Buzz");
+//     } else if (i % 6 === 0) {
+//       console.log("Fizz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// };
+// fizzBuzz();
+
+//  const findParameter = function (length, width){
+//     let total = (length*2) + (width*2);
+//         if(total >=20 ){
+//             console.log(`True. The perimeter is ${total}`);
+// }else{
+//     console.log(`False. The perimeter is ${total}`);
+// }
+
+// }
+// findParameter(2,2);
+// findParameter(10,20);
+
+const library = {
+  Name: "",
+  Address: "",
+  Sections: {
+    Collections: [
+      {
+        Classification: "",
+        Count: '',
+        Aisle: "",
+      },
+      {
+        Classification: "",
+        Count: "",
+        Aisle: "",
+      },
+    ],
+  },
+};
