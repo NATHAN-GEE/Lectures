@@ -116,41 +116,74 @@
 //Challenge
 //FizzBuzz with if else conditional
 
-let myNum = 33;
+// let myNum = 33;
 
-if (myNum % 3 === 0) {
-  console.log("Fizz");
-} else if (myNum % 5 === 0) {
-  console.log("Buzz");
-} else if (myNum % 3 === 0 && myNum % 5 === 0) {
-  console.log("FizzBuzz");
-} else {
-  console.log(myNum);
+// if (myNum % 3 === 0) {
+//   console.log("Fizz");
+// } else if (myNum % 5 === 0) {
+//   console.log("Buzz");
+// } else if (myNum % 3 === 0 && myNum % 5 === 0) {
+//   console.log("FizzBuzz");
+// } else {
+//   console.log(myNum);
+// }
+// console.log("--------------------");
+
+// //FizzBuzz with ternary Operator:
+
+// myNum % 15 === 0
+//   ? console.log("Fizz Buzz!")
+//   : myNum % 5 === 0
+//   ? console.log("Buzz")
+//   : myNum % 3 === 0
+//   ? console.log("Fizz")
+//   : console.log(myNum);
+
+// console.log("--------------------");
+
+// //For loop
+// //FizzBuzz
+// for (i = 0; i < myNum; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("Fizz Buzz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+
+document.body.style.cssText = 'display: flex; flex-direction: column; display-content: center'
+let input = document.createElement('input')
+document.body.append(input)
+let button = document.createElement('button')
+button.innerText = "Submit"
+document.body.append(button)
+let feedback = document.createElement('h2')
+
+let randomNumber = Math.floor(Math.random()*10 + 1);
+console.log(randomNumber)
+
+let correct = Number(randomNumber);
+console.log(correct)
+button.onclick = function (){
+let guess = Number(input.value);
+console.log(guess)
+ 
+  if (guess == correct){
+  console.log( `Correct! you have won!`);
+  feedback.innertext = `You are correct`;
 }
-console.log("--------------------");
-
-//FizzBuzz with ternary Operator:
-
-myNum % 15 === 0
-  ? console.log("Fizz Buzz!")
-  : myNum % 5 === 0
-  ? console.log("Buzz")
-  : myNum % 3 === 0
-  ? console.log("Fizz")
-  : console.log(myNum);
-
-console.log("--------------------");
-
-//For loop
-//FizzBuzz
-for (i = 0; i < myNum; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("Fizz Buzz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else {
-    console.log(i);
-  }
+  else if(guess > correct){
+    console.log('to hight');
+  feedback.innertext = `Your number is too high`;
 }
+ else{
+   console.log('to low');
+   feedback.innertext = `Your number is too low`;
+ }
+ } 
+document.body.append(feedback)
